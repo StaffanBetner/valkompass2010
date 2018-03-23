@@ -10,7 +10,7 @@ partycols <- c(
 "Centerpartiet" = "#009933",
 "Feministiskt initiativ" =  "#cd1b68",
 "Kristdemokraterna" =  "#231977",
-"Liberalerna" = "#6BB7EC",
+"Folkpartiet" = "#6BB7EC",
 "Miljöpartiet" = "#83CF39",
 "Moderaterna" =  "#1B49DD",
 "Piratpartiet" = "#572B85",

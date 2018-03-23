@@ -4,8 +4,8 @@ library(ggplot2)
 library(magrittr)
 library(plotly)
 load(".RData")
-xaxis = list(range = c(-0.75, 0.6))# x = -0.6 to 0.61
-yaxis = list(range = c(-0.9, 0.75))#y = -0.75 to 0.55
+xaxis = list(range = c(-4.3, 3.9))# x = -0.6 to 0.61
+yaxis = list(range = c(-4, 4.1))#y = -0.75 to 0.55
 
 shinyServer(function(input, output) {
   output$plot <- renderPlotly({
@@ -22,7 +22,7 @@ shinyServer(function(input, output) {
         )) +
         geom_point() +
         scale_colour_manual(values = partycols) +
-        labs(x = "Vänster-Höger", y = "Tradition-Auktoritet-Nationalist kontra Grön-Alternativ-Liberal", color =
+        labs(x = "Vänster-Höger", y = "Grön-Alternativ-Liberal kontra Tradition-Auktoritet-Nationalist", color =
                "") +
         scale_y_continuous(breaks = NULL) +
         scale_x_continuous(breaks = NULL) +
@@ -53,7 +53,7 @@ shinyServer(function(input, output) {
           )) +
           geom_point() +
           labs(x = "Vänster-Höger",
-               y = "Tradition-Auktoritet-Nationalist kontra Grön-Alternativ-Liberal",
+               y = "Grön-Alternativ-Liberal kontra Tradition-Auktoritet-Nationalist",
                color =
                  "") +
           scale_y_continuous(breaks = NULL) +
@@ -79,7 +79,7 @@ shinyServer(function(input, output) {
           )) +
           geom_point() +
           labs(x = "Vänster-Höger",
-               y = "Tradition-Auktoritet-Nationalist kontra Grön-Alternativ-Liberal",
+               y = "Grön-Alternativ-Liberal kontra Tradition-Auktoritet-Nationalist",
                color =
                  "") +
           scale_y_continuous(breaks = NULL) +
@@ -114,7 +114,7 @@ shinyServer(function(input, output) {
         ) +
         scale_colour_manual(values = partycols) +
         stat_ellipse() +
-        labs(x = "Vänster-Höger", y = "Tradition-Auktoritet-Nationalist kontra Grön-Alternativ-Liberal", color =
+        labs(x = "Vänster-Höger", y = "Grön-Alternativ-Liberal kontra Tradition-Auktoritet-Nationalist", color =
                "") +
         scale_y_continuous(breaks = NULL) +
         scale_x_continuous(breaks = NULL) +
