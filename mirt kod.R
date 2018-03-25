@@ -298,4 +298,10 @@ rm(scores)
 rm(output)
 rm(i)
 rm(mirt_obj)
+
+# Procrustesanalys (inpassning av 2010-placeringarna i 2014)
+joined_dataset[,56] <- (((as.matrix(joined_dataset[,56:57])%*%matrix(c( 0.9847561, 0.1739410,-0.1739410,  0.9847561), nrow=2))*0.844)[,1]+0.07261312)
+joined_dataset[,57] <- (((as.matrix(joined_dataset[,56:57])%*%matrix(c( 0.9847561, 0.1739410,-0.1739410,  0.9847561), nrow=2))*0.844)[,2]+0.08944217)
+
+
 save.image(".RData")

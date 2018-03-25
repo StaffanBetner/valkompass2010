@@ -4,8 +4,8 @@ library(ggplot2)
 library(magrittr)
 library(plotly)
 load(".RData")
-xaxis = list(range = c(-4.3, 3.9))# x = -0.6 to 0.61
-yaxis = list(range = c(-4, 4.1))#y = -0.75 to 0.55
+xaxis = list(range = c(-4.2, 3.4))
+yaxis = list(range = c(-3.7, 4.5))
 
 shinyServer(function(input, output) {
   output$plot <- renderPlotly({
